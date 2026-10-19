@@ -1,0 +1,185 @@
+// data/services.js
+
+export const servicesData = [
+  // ─── ACADEMIC ───
+  {
+    id: 'srv-001',
+    icon: 'book-outline',
+    title: 'Courses',
+    category: 'Academic',
+    description: 'View and manage your enrolled courses',
+    color: '#454FA8',
+    bgColor: '#EEF0FF',
+  },
+  {
+    id: 'srv-002',
+    icon: 'school-outline',
+    title: 'Results',
+    category: 'Academic',
+    description: 'Check your academic results and grades',
+    color: '#5B68B8',
+    bgColor: '#EEF0FF',
+  },
+  {
+    id: 'srv-003',
+    icon: 'calendar-outline',
+    title: 'Timetable',
+    category: 'Academic',
+    description: 'View your weekly class schedule',
+    color: '#7A87C8',
+    bgColor: '#EEF0FF',
+  },
+  {
+    id: 'srv-004',
+    icon: 'library-outline',
+    title: 'E-Library',
+    category: 'Academic',
+    description: 'Access digital books and journals',
+    color: '#454FA8',
+    bgColor: '#EEF0FF',
+  },
+  {
+    id: 'srv-005',
+    icon: 'laptop-outline',
+    title: 'Moodle',
+    category: 'Academic',
+    description: 'Access online learning materials',
+    color: '#5B68B8',
+    bgColor: '#EEF0FF',
+  },
+
+  // ─── ADMINISTRATIVE ───
+  {
+    id: 'srv-006',
+    icon: 'wallet-outline',
+    title: 'Fees',
+    category: 'Administrative',
+    description: 'Check fee balance and payment history',
+    color: '#E67E22',
+    bgColor: '#FEF5E7',
+  },
+  {
+    id: 'srv-007',
+    icon: 'document-text-outline',
+    title: 'Registration',
+    category: 'Administrative',
+    description: 'Semester course registration',
+    color: '#27AE60',
+    bgColor: '#EAFAF1',
+  },
+  {
+    id: 'srv-008',
+    icon: 'card-outline',
+    title: 'Student ID',
+    category: 'Administrative',
+    description: 'Access your digital student ID',
+    color: '#2980B9',
+    bgColor: '#EBF5FB',
+  },
+  {
+    id: 'srv-009',
+    icon: 'receipt-outline',
+    title: 'Transcripts',
+    category: 'Administrative',
+    description: 'Request official transcripts',
+    color: '#8E44AD',
+    bgColor: '#F4ECF7',
+  },
+
+  // ─── STUDENT LIFE ───
+  {
+    id: 'srv-010',
+    icon: 'home-outline',
+    title: 'Accommodation',
+    category: 'Student Life',
+    description: 'Hostel and housing information',
+    color: '#E74C3C',
+    bgColor: '#FDEDEC',
+  },
+  {
+    id: 'srv-011',
+    icon: 'restaurant-outline',
+    title: 'Cafeteria',
+    category: 'Student Life',
+    description: 'View meal plans and cafeteria menu',
+    color: '#F39C12',
+    bgColor: '#FEF9E7',
+  },
+  {
+    id: 'srv-012',
+    icon: 'fitness-outline',
+    title: 'Sports',
+    category: 'Student Life',
+    description: 'Sports facilities and clubs',
+    color: '#1ABC9C',
+    bgColor: '#E8F8F5',
+  },
+  {
+    id: 'srv-013',
+    icon: 'people-outline',
+    title: 'Clubs',
+    category: 'Student Life',
+    description: 'Join student clubs and societies',
+    color: '#3498DB',
+    bgColor: '#EBF5FB',
+  },
+  {
+    id: 'srv-014',
+    icon: 'medkit-outline',
+    title: 'Health Services',
+    category: 'Student Life',
+    description: 'Campus clinic and wellness support',
+    color: '#2ECC71',
+    bgColor: '#EAFAF1',
+  },
+
+  // ─── ICT ───
+  {
+    id: 'srv-015',
+    icon: 'desktop-outline',
+    title: 'ICT Support',
+    category: 'ICT',
+    description: 'Technical support for students',
+    color: '#2C3E50',
+    bgColor: '#ECF0F1',
+  },
+  {
+    id: 'srv-016',
+    icon: 'wifi-outline',
+    title: 'WiFi Access',
+    category: 'ICT',
+    description: 'Campus internet access details',
+    color: '#2980B9',
+    bgColor: '#EBF5FB',
+  },
+  {
+    id: 'srv-017',
+    icon: 'print-outline',
+    title: 'Printing',
+    category: 'ICT',
+    description: 'Campus printing and scanning',
+    color: '#7F8C8D',
+    bgColor: '#F2F4F4',
+  },
+  {
+    id: 'srv-018',
+    icon: 'mail-outline',
+    title: 'Student Email',
+    category: 'ICT',
+    description: 'Access your MUBAS student email',
+    color: '#D35400',
+    bgColor: '#FDF2E9',
+  },
+];
+
+// Category list for filter chips
+export const serviceCategories = [
+  { id: 'All', icon: 'apps-outline' },
+  { id: 'Academic', icon: 'school-outline' },
+  { id: 'Administrative', icon: 'business-outline' },
+  { id: 'Student Life', icon: 'people-outline' },
+  { id: 'ICT', icon: 'laptop-outline' },
+];
+
+// Services shown on the Home screen (first 9)
+export const homeServices = servicesData.slice(0, 9);
