@@ -1,8 +1,8 @@
-import { Ionicons } from '@expo/vector-icons';
 import { useRef, useState } from 'react';
 import {
   Dimensions,
   FlatList,
+  Image,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -18,12 +18,15 @@ export default function CampusCarousel() {
 
   const renderItem = ({ item }) => (
     <TouchableOpacity
-      style={[styles.campusCard, { backgroundColor: item.color }]}
+      style={styles.campusCard}
       activeOpacity={0.9}
     >
-      <View style={styles.iconContainer}>
-        <Ionicons name="business-outline" size={60} color="#FFFFFF" />
-      </View>
+      {/* Real Image */}
+      <Image source={item.image} style={styles.campusImage} resizeMode="cover" />
+      
+      {/* Dark Overlay to make text readable */}
+      <View style={styles.overlay} />
+      
       <View style={styles.campusContent}>
         <Text style={styles.campusTitle}>{item.title}</Text>
         <Text style={styles.campusSubtitle}>{item.subtitle}</Text>
@@ -91,29 +94,43 @@ const styles = StyleSheet.create({
   sectionTitle: { fontSize: 18, fontWeight: '700', color: '#222' },
   viewAll: { fontSize: 13, color: '#454FA8', fontWeight: '600' },
   carouselContent: { paddingHorizontal: 0 },
+  
+  // Updated Card Style
   campusCard: {
     width: width - 32,
     height: 200,
     borderRadius: 18,
-    padding: 24,
     marginRight: 12,
-    justifyContent: 'flex-end',
+    overflow: 'hidden', // This makes sure the image respects the rounded corners
     elevation: 3,
   },
-  iconContainer: {
+  
+  // Image Style
+  campusImage: {
+    width: '100%',
+    height: '100%',
     position: 'absolute',
-    top: 30,
-    right: 30,
-    opacity: 0.3,
   },
-  campusContent: { justifyContent: 'flex-end' },
+  
+  // Dark overlay
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0,0,0,0.4)', // 40% black opacity
+  },
+  
+  campusContent: { 
+    position: 'absolute',
+    bottom: 20,
+    left: 20,
+    right: 20,
+  },
   campusTitle: {
     color: '#FFFFFF',
     fontSize: 20,
     fontWeight: '700',
     marginBottom: 4,
   },
-  campusSubtitle: { color: '#DDE1FF', fontSize: 13, marginBottom: 8 },
+  campusSubtitle: { color: '#E0E0E0', fontSize: 13, marginBottom: 8 },
   exploreButton: {
     alignSelf: 'flex-start',
     paddingHorizontal: 12,

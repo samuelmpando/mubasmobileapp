@@ -5,23 +5,23 @@
 export const campusData = [
   {
     id: 'campus-001',
-    title: 'MUBAS Main Campus',
-    subtitle: 'Academic excellence in action',
+    title: 'Student Life',
+    subtitle: 'Vibrant student community hub',
     color: '#454FA8',
-    // image: require('../assets/images/campus-main.jpg'),
+    image: require('../assets/images/students-life.jpg'),
   },
   {
     id: 'campus-002',
-    title: 'Library & Learning Center',
-    subtitle: 'State-of-the-art learning resources',
+    title: 'Campus Clinic',
+    subtitle: 'Health and wellness facilities',
     color: '#5B68B8',
-    // image: require('../assets/images/campus-library.jpg'),
+    image: require('../assets/images/clinic.jpg'),
   },
   {
     id: 'campus-003',
-    title: 'Student Life & Recreation',
-    subtitle: 'Vibrant student community hub',
+    title: 'Clubs & Societies',
+    subtitle: 'Get involved in campus activities',
     color: '#7A87C8',
-    // image: require('../assets/images/campus-student.jpg'),
+    image: require('../assets/images/clubs.jpg'),
   },
 ];
