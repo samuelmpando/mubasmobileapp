@@ -56,7 +56,7 @@ export default function TimetableWebView() {
           <ActivityIndicator size="large" color="#454FA8" />
           <Text style={styles.loadingText}>Loading MUBAS timetable...</Text>
           <Text style={styles.loadingSubtext}>
-            Connecting to 41.70.48.214
+            Connecting to 41.70.51.136
           </Text>
         </View>
       )}
